@@ -1,0 +1,55 @@
+
+(org/henriquecf/criteria/stories/consulta_numero.story)
+Scenario: consulta por telefone
+Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 | (PENDING)
+When eu fizer uma consulta por “INF” (PENDING)
+Then eu devo ver “62 32232332” (PENDING)
+@Given("os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |")
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+
+@When("eu fizer uma consulta por \u201CINF\u201D")
+@Pending
+public void whenEuFizerUmaConsultaPorINF() {
+  // PENDING
+}
+
+@Then("eu devo ver \u201C62 32232332\u201D")
+@Pending
+public void thenEuDevoVer6232232332() {
+  // PENDING
+}
+
+
+Scenario: consulta sem retorno
+Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 | (PENDING)
+When eu fizer uma consulta por “IF” (PENDING)
+Then eu devo ver “Nenhum resultado encontrado” (PENDING)
+@Given("os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |")
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+
+@When("eu fizer uma consulta por \u201CIF\u201D")
+@Pending
+public void whenEuFizerUmaConsultaPorIF() {
+  // PENDING
+}
+
+@Then("eu devo ver \u201CNenhum resultado encontrado\u201D")
+@Pending
+public void thenEuDevoVerNenhumResultadoEncontrado() {
+  // PENDING
+}
+
+
+

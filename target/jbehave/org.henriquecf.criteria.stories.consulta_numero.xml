@@ -1,0 +1,54 @@
+<story path="org/henriquecf/criteria/stories/consulta_numero.story" title="">
+<scenario keyword="Scenario:" title="consulta por telefone">
+<step outcome="pending" keyword="PENDING">Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 |</step>
+<step outcome="pending" keyword="PENDING">When eu fizer uma consulta por &#8220;INF&#8221;</step>
+<step outcome="pending" keyword="PENDING">Then eu devo ver &#8220;62 32232332&#8221;</step>
+<pendingMethod>@Given(&quot;os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |&quot;)
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;eu fizer uma consulta por \u201CINF\u201D&quot;)
+@Pending
+public void whenEuFizerUmaConsultaPorINF() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;eu devo ver \u201C62 32232332\u201D&quot;)
+@Pending
+public void thenEuDevoVer6232232332() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+<scenario keyword="Scenario:" title="consulta sem retorno">
+<step outcome="pending" keyword="PENDING">Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 |</step>
+<step outcome="pending" keyword="PENDING">When eu fizer uma consulta por &#8220;IF&#8221;</step>
+<step outcome="pending" keyword="PENDING">Then eu devo ver &#8220;Nenhum resultado encontrado&#8221;</step>
+<pendingMethod>@Given(&quot;os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |&quot;)
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;eu fizer uma consulta por \u201CIF\u201D&quot;)
+@Pending
+public void whenEuFizerUmaConsultaPorIF() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;eu devo ver \u201CNenhum resultado encontrado\u201D&quot;)
+@Pending
+public void thenEuDevoVerNenhumResultadoEncontrado() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>

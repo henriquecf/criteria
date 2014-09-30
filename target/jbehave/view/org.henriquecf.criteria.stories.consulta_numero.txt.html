@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>org.henriquecf.criteria.stories.consulta_numero</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(org/henriquecf/criteria/stories/consulta_numero.story)
+Scenario: consulta por telefone
+Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 | (PENDING)
+When eu fizer uma consulta por “INF” (PENDING)
+Then eu devo ver “62 32232332” (PENDING)
+@Given("os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |")
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+
+@When("eu fizer uma consulta por \u201CINF\u201D")
+@Pending
+public void whenEuFizerUmaConsultaPorINF() {
+  // PENDING
+}
+
+@Then("eu devo ver \u201C62 32232332\u201D")
+@Pending
+public void thenEuDevoVer6232232332() {
+  // PENDING
+}
+
+
+Scenario: consulta sem retorno
+Given os seguintes telefones:
+  | orgao | telefone          |
+  | INF    | 62 32232332 |
+  | IME    | 62 39939339 | (PENDING)
+When eu fizer uma consulta por “IF” (PENDING)
+Then eu devo ver “Nenhum resultado encontrado” (PENDING)
+@Given("os seguintes telefones:\n  | orgao | telefone          |\n  | INF    | 62 32232332 |\n  | IME    | 62 39939339 |")
+@Pending
+public void givenOsSeguintesTelefonesOrgaoTelefoneINF6232232332IME6239939339() {
+  // PENDING
+}
+
+@When("eu fizer uma consulta por \u201CIF\u201D")
+@Pending
+public void whenEuFizerUmaConsultaPorIF() {
+  // PENDING
+}
+
+@Then("eu devo ver \u201CNenhum resultado encontrado\u201D")
+@Pending
+public void thenEuDevoVerNenhumResultadoEncontrado() {
+  // PENDING
+}
+
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
