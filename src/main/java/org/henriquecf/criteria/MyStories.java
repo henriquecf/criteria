@@ -38,8 +38,8 @@ import static org.jbehave.core.reporters.Format.XML;
 public class MyStories extends JUnitStories {
     
     public MyStories() {
-        configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(2).useStoryTimeoutInSecs(60);
+        configuredEmbedder().embedderControls().doGenerateViewAfterStories(false).doIgnoreFailureInStories(false)
+                .doIgnoreFailureInView(false).useThreads(2).useStoryTimeoutInSecs(60);
     }
 
     @Override
