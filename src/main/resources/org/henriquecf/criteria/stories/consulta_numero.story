@@ -1,18 +1,13 @@
-
-Scenario: consulta por telefone
-Given os seguintes telefones:
-  | orgao | telefone          |
-  | INF    | 62 32232332 |
-  | IME    | 62 39939339 |
-When eu fizer uma consulta por “INF”
-Then eu devo ver “62 32232332”
-
-Scenario: consulta sem retorno
-Given os seguintes telefones:
-  | orgao | telefone          |
-  | INF    | 62 32232332 |
-  | IME    | 62 39939339 |
-When eu fizer uma consulta por “IF”
-Then eu devo ver “Nenhum resultado encontrado”
+Scenario: consulta HTTP exemplo
+Given os seguintes headers: []
+And o seguinte corpo JSON: []
+When eu der um get na url http://google.com
+Then eu deveria receber os seguintes headers:
+  """
+  """
+And o seguinte corpo JSON:
+  """
+  """
+And o codigo de status 200
 
 
