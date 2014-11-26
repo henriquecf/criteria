@@ -60,16 +60,16 @@ public class RestSteps {
     @Then("eu deveria receber o seguinte header $chave com valor $valor")
     public void checkHeaders(String chave, String valor) {
         Assert.assertTrue(jsonResponse.getHeaders().containsKey(chave));
-        Assert.assertTrue(jsonResponse.getHeaders().containsKey(valor));
+        Assert.assertTrue(jsonResponse.getHeaders().containsValue(valor));
     }
 
     @Then("o seguinte corpo JSON: $json")
     public void checkJson(String json){
-        Assert.assertThat(jsonResponse.getBody(), equalTo(new JsonNode(json)));
+        Assert.assertEquals(jsonResponse.getBody(), new JsonNode(json));
     }
 
     @Then("o codigo de status $status")
     public void checkStatus(Integer status) {
-        Assert.assertThat(jsonResponse.getCode(), equalTo(status));
+        Assert.assertEquals((Integer)jsonResponse.getCode(), status);
     }
 }

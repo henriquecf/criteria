@@ -20,12 +20,15 @@ import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.core.steps.ParameterConverters;
 import org.jbehave.core.steps.ParameterConverters.DateConverter;
 import org.jbehave.core.steps.ParameterConverters.ExamplesTableConverter;
+import org.junit.runner.RunWith;
 
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.core.reporters.Format.HTML;
 import static org.jbehave.core.reporters.Format.TXT;
 import static org.jbehave.core.reporters.Format.XML;
+
+import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 
 /**
  * <p>
@@ -35,11 +38,12 @@ import static org.jbehave.core.reporters.Format.XML;
  * Stories are specified in classpath and correspondingly the {@link LoadFromClasspath} story loader is configured.
  * </p> 
  */
+@RunWith(JUnitReportingRunner.class)
 public class MyStories extends JUnitStories {
     
     public MyStories() {
-        configuredEmbedder().embedderControls().doGenerateViewAfterStories(false).doIgnoreFailureInStories(false)
-                .doIgnoreFailureInView(false).useThreads(2).useStoryTimeoutInSecs(60);
+        configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
+                .doIgnoreFailureInView(true).useThreads(2).useStoryTimeoutInSecs(60);
     }
 
     @Override
